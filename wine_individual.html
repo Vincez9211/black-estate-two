@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/wine_individual.css">
+
+    <link rel="icon" type="image/x-icon" href="/img/Favicon-01.ico">
+
+    <script src="https://kit.fontawesome.com/026c06b2f7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <!-- inserting footer start  -->
+    <!-- html include script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
+    </script>
+
+    <script>    
+        $.get("./header.html", function (data) {
+            $("#header_div").replaceWith(data);
+        });
+        // ^^for headers     
+
+
+    
+        $.get("./footer.html", function (data) {
+            $("#footer_div").replaceWith(data);
+        });
+        // ^^for footers 
+    </script>
+    
+    <!-- "./footer.html" is the html file named in this example. Change file name according to your own structure -->    
+    <!-- "#footer-div" is the division ID named in this example. Change ID name according to your own structure -->
+    
+    <!-- inserting footer end  -->
+
+    <title>Black Estate – Pet Nat 2021</title>
+</head>
+
+<body>
+
+    <header>
+        <a href="./index.html"><img src="./img/BlackEstate-logo white.svg" alt="Logo"></a>
+        <nav class="navbar">
+            <ul class="nav_menu">
+                <li class="nav_link">
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li class="nav_link">
+                    <a class="active" href="wines.html">Wines</a>
+                </li>
+
+                <li class="nav_link">
+                    <a href="stay.html">Dine & Stay</a>
+                </li>
+
+                <li class="nav_link">
+                    <a href="">Members</a>
+                </li>
+
+                <li class="nav_link">
+                    <a href="">About</a>
+                </li>
+
+                <li>
+                    <a class="contact_btn" href="">Contact</a>
+                </li>
+                <li>
+                    <a class="cart" href="">Cart</a>
+                </li>
+             
+
+            </ul>
+            <!-- <label id="icon">
+                <i class="fa-solid fa-bars"></i> -->
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>                
+            </div>
+            </label>
+        </nav>
+        
+    </header>
+    <!-- <header id="header_div">
+
+
+        
+    </header> -->
+
+
+    <div class="wine">
+        <div class="wine_info">
+            <h2>Netherwood Pét Nat 2021</h2>
+            <p>Pét Nat! A co-ferment of all of the Chardonnay and Pinot Noir grapes we harvested at Netherwood, bottled whilst fermenting during the 2021 harvest. A rare wine and vintage. Rose gold-apricot hue. Effervescence aromas with white peach, apricot and subtle honey notes. The palate is vibrant, fresh and steely with a fine mousse and lingering crisp finish.  Dry (extra Brut) and alive. Zero sulphur.</p>
+            <div class="checkbox">
+                <input type="checkbox" id="scales" name="scales"
+                       unchecked>
+                <label for="scales">Would you like a gift box? ($6.00) </label>
+            </div>
+
+            <h4 class="special_price">$45.00</h4>
+            <p class="quantity_head">Quantity:</p>
+            <div class="quantity">
+                <button class="minus">-</button>
+                <input class="number" type="text" Value="0"> 
+                <button class="plus">+</button>
+            </div>
+
+            <div class="buttons">
+                <a href=""><button class="cart">Add to Cart</button></a>
+                <a href="./wine_order.html"><button class="buy_now">Buy now</button></a>
+            </div>
+            <!-- <div>
+                <input type="checkbox">
+                <label for="gift_box"> Would you like a gift box? ($6.00)</label>
+            </div> -->
+            <div class="more_info">
+                <p>Learn more about organics and Biodynamics:</p>
+                <ul>
+                    <li>Tasting Notes</li>
+                    <li>Netherwood Vineyard</li>
+                    <li>2021 Season Report</li>
+                </ul>
+            </div>
+        </div> 
+
+        <div class="wine_pic">
+            <img src="./img/Wines/Black_estate_wine_1.png" alt="IMG HERE" />
+        </div>
+    </div>    
+
+
+    <div class="wine_section">
+        <h2>Related products</h2>
+        <section class="wine_scoll">
+                
+            <a class="hoverParent" href="./wine_individual.html">
+            <div class="mid">
+                <img class="full" src="./img/Wines/Black_estate_wine_1.png" alt="IMG HERE" />
+                <h4 class="full" >Netherwood Pét Nat 2021</h4>  
+                <i class="full fa-solid fa-circle-arrow-right"></i>      
+            </div> 
+            </a>
+
+            <a class="hoverParent" href="./wine_individual.html">
+            <div class="mid">
+                <img class="full" src="./img/Wines/Black_estate_wine_2.png" alt="IMG HERE" />
+                <h4 class="full" >Damsteep Riesling 2021</h4>  
+                <i class="full fa-solid fa-circle-arrow-right"></i>      
+            </div> 
+            </a>
+
+            <a class="hoverParent" href="./wine_individual.html">
+            <div class="mid">
+                <img class="full" src="./img/Wines/Black_estate_wine_3.png" alt="IMG HERE" />
+                <h4 class="full" >Home Chenin Blanc 2021</h4>  
+                <i class="full fa-solid fa-circle-arrow-right"></i>      
+            </div> 
+            </a>
+
+            <a class="hoverParent" href="./wine_individual.html">
+            <div class="mid">
+                <img class="full" src="./img/Wines/Black_estate_wine_4.png" alt="IMG HERE" />
+                <h4 class="full" >Home Chardonnay Young Vines 2021</h4>  
+                <i class="full fa-solid fa-circle-arrow-right"></i>      
+            </div> 
+            </a>
+
+            <a class="hoverParent" href="./wine_individual.html">
+            <div class="mid">
+                <img class="full" src="./img/Wines/Black_estate_wine_5.png" alt="IMG HERE" />
+                <h4 class="full" >Home Chardonnay 2020</h4>  
+                <i class="full fa-solid fa-circle-arrow-right"></i>      
+            </div> 
+            </a>
+
+            <a class="hoverParent" href="./wine_individual.html">
+            <div class="mid">
+                <img class="full" src="./img/Wines/Black_estate_wine_6.png" alt="IMG HERE" />
+                <h4 class="full" >Home Pinot Noir 2019</h4>  
+                <i class="full fa-solid fa-circle-arrow-right"></i>      
+            </div> 
+            </a>
+
+            <a class="hoverParent" href="./wine_individual.html">
+            <div class="mid">
+                <img class="full" src="./img/Wines/Black_estate_wine_7.png" alt="IMG HERE" />
+                <h4 class="full" >Damsteep Pinot Noir 2017</h4>  
+                <i class="full fa-solid fa-circle-arrow-right"></i>      
+            </div> 
+            </a>
+
+            <a class="hoverParent" href="./wine_individual.html">
+            <div class="mid">
+                <img class="full" src="./img/Wines/Black_estate_wine_8.png" alt="IMG HERE" />
+                <h4 class="full" >Netherwood Pinot Noir 2019</h4>  
+                <i class="full fa-solid fa-circle-arrow-right"></i>      
+            </div> 
+            </a>
+
+            <a class="hoverParent" href="./wine_individual.html">
+            <div class="mid">
+                <img class="full" src="./img/Wines/Black_estate_wine_9.png" alt="IMG HERE" />
+                <h4 class="full" >Wild Life Triangle Block 2021</h4>  
+                <i class="full fa-solid fa-circle-arrow-right"></i>      
+            </div> 
+            </a>
+
+        </section>
+    </div>
+  </div>
+
+    
+
+
+    <footer id="footer_div">
+
+    </footer>
+
+    <script src="./script.js"> </script>
+</body>

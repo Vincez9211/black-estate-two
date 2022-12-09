@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <link rel="icon" type="image/x-icon" href="/img/Favicon-01.ico">
+
+    <script src="https://kit.fontawesome.com/026c06b2f7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <link rel="stylesheet" href="./css/wine_checkout.css">
+
+    <!-- inserting footer start  -->
+    <!-- html include script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
+    </script>
+
+    <script>    
+        $.get("./header.html", function (data) {
+            $("#header_div").replaceWith(data);
+        });
+        // ^^for headers     
+
+
+    
+        $.get("./footer.html", function (data) {
+            $("#footer_div").replaceWith(data);
+        });
+        // ^^for footers 
+    </script>
+    
+    <!-- "./footer.html" is the html file named in this example. Change file name according to your own structure -->    
+    <!-- "#footer-div" is the division ID named in this example. Change ID name according to your own structure -->
+    
+    <!-- inserting footer end  -->
+
+    <title>Black Estate – Checkout</title>
+</head>
+
+<body>
+
+    <header>
+        <a href="./index.html"><img src="./img/BlackEstate-logo white.svg" alt="Logo"></a>
+        <nav class="navbar">
+            <ul class="nav_menu">
+                <li class="nav_link">
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li class="nav_link">
+                    <a class="active" href="wines.html">Wines</a>
+                </li>
+
+                <li class="nav_link">
+                    <a href="stay.html">Dine & Stay</a>
+                </li>
+
+                <li class="nav_link">
+                    <a href="">Members</a>
+                </li>
+
+                <li class="nav_link">
+                    <a href="">About</a>
+                </li>
+
+                <li>
+                    <a class="contact_btn" href="">Contact</a>
+                </li>
+                <li>
+                    <a class="cart" href="">Cart</a>
+                </li>
+             
+
+            </ul>
+            <!-- <label id="icon">
+                <i class="fa-solid fa-bars"></i> -->
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>                
+            </div>
+            </label>
+        </nav>
+        
+    </header>
+    <!-- <header id="header_div">
+
+
+        
+    </header> -->
+
+    <div class="billing_order">
+        <div class="billing">
+            <h2 class="bill_header">Billing and shipping</h2>
+            <p>First name</p>
+            <input class="bill_input" type="text">
+            <p>Last name</p>
+            <input class="bill_input" type="text">
+            <p>Email address</p>
+            <input class="bill_input" type="text">
+            <p>Company name (optional)</p>
+            <input class="bill_input" type="text">
+            <p>Street address</p>
+            <input class="bill_input" type="text">
+            <p>Town/city</p>
+            <input class="bill_input" type="text">
+            <p>Postcode</p>
+            <input class="bill_input" type="text">
+            <img class="safe_img" src="./img/safe_checkout.png" alt="">
+        </div>
+
+        <div class="order_wrapper">
+            <h2 class="order_header">Your Order</h2>
+            
+            <div class="order">
+                <div class="pic_par">
+                    <div class="pic">
+                        <img src="./img/Wines/Black_estate_wine_1.png" alt="">
+                    </div>
+                    <div class="par">
+                        <h3>Netherwood Pét Nat 2021</h3>
+                        <h3>$45.00</h3>
+                    </div>
+
+                </div>
+
+                <div class="cart_text">
+                    <p class="left_info">
+                        <strong>Subtotal</strong><br>
+                        Shipping<br>
+                        <strong>Order</strong><br>
+                        <strong>Total</strong><br>
+                    </p>
+                    <p class="right_info">
+                        <strong>$45.00</strong><br>
+                        $8.00<br>
+                        <strong>$45.00</strong><br>
+                        <strong>$53.00</strong><br>
+                    </p>
+                </div>
+
+                <div class="credit_card">
+                    <h3>Pay securely with your credit card</h3>
+                    <p>Card number</p>
+                    <input type="text">
+                    <p>Expiry</p>
+                    <input type="text">
+                    <p>Card Code (CVC)</p>
+                    <input type="text">
+                    
+                    <button class="credit_button">Place Your Order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+
+
+
+
+    <footer id="footer_div">
+
+    </footer>
+
+    <script src="./script.js"> </script>
+</body>

@@ -1,0 +1,748 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800;900&display=swap');
+
+
+
+/* for background image darkness  */
+/* div.wines{
+    background-image: url(background-image: url(../img/Pet\ Nat\ Wine-background\ 2-03.jpeg);
+    background-color: rgba(255,255,255,0.9);
+    background-blend-mode: darken;
+    /* You may add things like width, height, background-size... 
+}*/
+
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root {
+ --gold: #989549;
+ --darkgold: rgb(63, 62, 32);
+ --lightgold: rgb(226, 223, 116);
+ --darkred: #5f3639;
+ --lightred: #bba7a8;
+ --offblack: #231f20;
+ --offgrey: #cdcdcd;
+ --pink: #231f20;
+ --white: #fff;
+ --pink: #ffd0d3;
+}
+
+
+/* title style start  */
+
+#icon{
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    line-height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    display: none;
+}
+
+h1{
+    color: var(--gold);
+    font-family: Playfair Display;
+    font-size: 4em;
+    padding: 20px 0;
+    
+}
+
+h2{
+    color: var(--darkred);
+    font-family: Playfair Display;
+    font-size: 2em;
+    padding: 15px 0;
+    
+}
+
+h3{
+    color: var(--offblack);
+    font-family: Montserrat;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+h4{
+    color: var(--offblack);
+    font-family: Playfair Display;
+    font-weight: 700;
+    padding-bottom: 15px;
+    /* color: var(--white); */
+
+}
+
+p{
+    color: var(--offblack);
+    font-family: Montserrat;
+    font-weight: 400;
+    padding: 15px 0;
+}
+
+
+
+button{
+    background-color: var(--darkred);
+    padding: 7px 12px;
+    border-radius: 4px;
+    border: none;
+    font-family: Montserrat;
+    font-weight: 500;
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover{
+    background-color: #a26d71;
+}
+/* title style end  */
+
+
+
+/* Navigation start  */
+
+header{
+    /* height: 40vh; */
+    background-image: url(../img/stay_header\ 2.jpg);
+    background-attachment: fixed;
+    background-position-y: -300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(94, 94, 94, 0.9);
+    background-blend-mode: darken;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+header img{
+    height: 20vh;
+} 
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+nav ul a{
+    padding: 20px;
+    font-family: Montserrat;
+    font-weight: 600;
+    color: whitesmoke;
+    
+}
+
+nav ul a:hover{
+    color: var(--pink);
+}
+
+.active{
+    color: var(--pink);
+}
+
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+    border-bottom: none;
+}
+
+.heading{
+    padding: 80px 100px;
+}
+
+
+/* table start  */
+
+.order_wrapper{
+
+ padding: 20px 30px;
+
+}
+
+.order_dates{
+    margin-bottom: 20px;
+}
+
+
+
+.order_dates{
+ padding:30px 40px;
+ display: flex;
+ flex-wrap: wrap;
+ overflow-x: scroll;
+ overflow-y: hidden;
+}
+
+
+.table_col{
+
+ border: 1.8px solid var(--offblack);
+ padding: 5px 20px;
+}
+
+.table_col h3{
+ padding: 0;
+ color: var(--offblack);
+}
+
+.day{
+ font-weight: 600;
+
+}
+
+.number{
+ font-size: 2em;
+ 
+
+}
+
+.month{
+ font-weight: 600;
+
+}
+
+
+.table_col:hover > h3{
+ color: var(--white);
+ cursor: pointer;
+
+}
+.table_col:hover{
+ background-color: var(--gold);
+}
+
+.table_col:active > h3{
+ color: var(--white);
+ cursor: pointer;
+
+}
+.table_col:active{
+ background-color: var(--gold);
+}
+
+.book_div{
+    text-align: right;
+
+}
+
+.book_div_2{
+    text-align: left;
+    padding: 20px 0px;
+
+}
+
+
+
+/* scroll start  */
+
+/* width */
+.order_dates::-webkit-scrollbar {
+ width: 10px;
+ height: 8px;
+}
+/* Track */
+.order_dates::-webkit-scrollbar-track {
+ box-shadow: inset 0 0 5px grey;
+ border-radius: 10px;
+}
+/* Handle */
+.order_dates::-webkit-scrollbar-thumb {
+ background: var(--gold);
+ border-radius: 10px;
+}
+/* Handle on hover */
+.order_dates::-webkit-scrollbar-thumb:hover {
+ background: #857430;
+}
+
+/* scroll end  */
+
+
+
+/* table end  */
+
+
+
+
+
+
+/* dine start  */
+.dine{
+    /* height: 70vh; */
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+}
+
+.dine_text{
+    padding: 50px 80px;
+    display: flex;
+    flex-direction:column;
+    align-content: center;
+    justify-content: center;
+}
+
+.dine_pic img{
+    object-fit: cover;
+    /* height: 70vh; */
+    /* height: 100%; */
+    width: 50vw;
+    min-height:100%;
+    max-height: 2000px;
+    
+}
+
+
+/* dine end  */
+
+
+img {
+    display: block;
+}
+/* ^^ removes white lines between images  */
+
+/* shop start  */
+.shop{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row-reverse;
+}
+
+
+.shop_pic img{
+    object-fit: cover;
+    width: 50vw;
+    min-height:100%;
+    max-height: 2000px;
+}
+
+.shop_text{
+    padding: 50px 80px;
+    display: flex;
+    flex-direction: column;
+    align-content: left;
+    justify-content: center;
+    text-align: left; 
+}  
+
+
+.gridContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+
+}
+/* shop end  */
+
+
+/* accom start  */
+.accom{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    
+}
+
+
+.accom_pic img{
+    object-fit: cover;
+    width: 50vw;
+    min-height:100%;
+    max-height: 2000px;
+}
+
+.accom_text{
+    padding: 50px 80px;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-content: left;
+    justify-content: center;
+    text-align: left; 
+}  
+
+
+.gridContainer_accom{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+
+}
+/* accom end  */
+   
+
+
+/* terms and conditions start  */
+.terms{
+    padding: 40px 80px 40px 80px;
+}
+
+.terms_h2{
+    text-align: center;
+
+}
+
+.strong{
+    font-weight: 700;
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+
+
+
+/* terms and conditions end  */
+
+
+/* footer start  */
+footer{
+    background-color: var(--offblack);
+    padding: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+footer p{
+    color: var(--white);
+}
+
+.gold{
+    color: var(--gold);
+    font-weight: 700;
+}
+
+
+footer img{
+    height: 100px;
+    width: auto;
+    align-self: flex-end;
+}
+
+/* copyright info start  */
+
+.copyright{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10vw;
+}
+
+.copyright p{
+    font-size: .7em;
+}
+
+.footer_links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer_links a{
+    font-size: .7em;
+    color: white;
+    text-decoration: underline;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.footer_links a:hover{
+    color: var(--gold)
+}
+
+/* copyright info end  */
+
+
+@media all and (max-width: 1000px) {
+    nav ul a{
+        padding: 15px;
+    }
+
+    .order_wrapper{
+        padding-top: 50px;
+    }
+    /* shop start  */
+    .shop{
+        display: flex;
+        justify-content:space-between;
+        flex-direction: column-reverse;
+    }
+
+    .shop_text{
+        padding: 30px;
+        
+    }
+
+    .shop_pic img{
+        object-fit: cover;
+        /* flex: 1; */
+        /* height: 100%; */
+        width: 100%;
+        /* height: 50vh; */
+    }
+
+
+    .gridContainer{
+        color: cornflowerblue;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+    /* shop end  */
+
+    /* accom start*/
+    
+    .accom{
+        display: flex;
+        justify-content:space-between;
+        flex-direction: column-reverse;
+    }
+
+    .accom_text{
+        padding: 30px;
+        width: 100%;
+    }
+
+    .accom_pic img{
+        object-fit: cover;
+        /* flex: 1; */
+        /* height: 100%; */
+        width: 100%;
+        /* height: 50vh; */
+    }
+
+    .gridContainer_accom{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+    
+    }
+    /* accom end */
+
+
+    /* dine start  */
+    .dine{
+        display: flex;
+        justify-content:space-between;
+        flex-direction: column-reverse;
+    }
+
+    .dine_text{
+        padding: 30px;
+    }
+
+    .dine img{
+        object-fit: cover;
+        /* height: 70vh; */
+        /* height: 100%; */
+        width: 100%;
+        height: 70vh;
+    }
+    /* dine end  */
+
+
+}
+
+
+
+
+
+
+@media all and (max-width: 750px) {
+
+    h1{
+        color: var(--gold);
+        font-family: Playfair Display;
+        font-size: 3em;
+        padding: 20px 0;
+    }
+
+    
+
+/* nav burger menu start  */
+    /* hamburger icon animation  */
+    .bar{
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        border-radius: 5px;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: white;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    /* hamburger icon animation end */
+    
+    header{
+        position: fixed;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 50px;
+        background-color: var(--offblack);
+        background-image: none;
+
+    }
+
+    header img{
+        height: 70px;
+    }
+
+    .nav_menu{
+        position: fixed;
+        right:-100%;
+        top: 60px;
+        height: 90vh;
+        gap: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: var(--offblack);
+        width: 100vw;
+        text-align: center;
+        transition: 0.5s;
+        z-index: 1;
+        padding: 40px 0;
+    }
+
+    .nav_item{
+        margin: 16px;
+    }
+
+    .nav_menu.active{
+        right: 0;
+    }
+
+/* nav burger menu end  */
+
+    .heading{
+        padding: 50px 30px;
+    }
+
+        
+    /* shop start  */
+    .shop{
+        display: flex;
+        justify-content:space-between;
+        flex-direction: column-reverse;
+    }
+
+    .shop_text{
+        padding: 30px;
+        
+    }
+
+    .shop_pic img{
+        object-fit: cover;
+        /* flex: 1; */
+        /* height: 100%; */
+        width: 100%;
+        /* height: 50vh; */
+    }
+    /* shop end  */
+
+    /* dine start  */
+    .dine{
+        display: flex;
+        justify-content:space-between;
+        flex-direction: column-reverse;
+    }
+
+    .dine_text{
+        padding: 30px;
+    }
+
+    .dine img{
+        object-fit: cover;
+        /* height: 70vh; */
+        /* height: 100%; */
+        width: 100%;
+        height: 70vh;
+    }
+    /* dine end  */
+
+    .terms{
+        padding: 30px;
+
+    }
+
+    /* footer start  */
+  
+    .info{
+        /* width: 50%; */
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .resturant{
+        text-align: right;
+    }
+
+    .hide{
+        display: none;
+    }
+
+    
+
+    /* copyright info start  */
+
+    .copyright{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* gap: 10vw; */
+    }
+
+    .copyright p{
+        font-size: .7em;
+    }
+
+    .element_hide{
+        display: none;
+    }
+/* copyright info end  */
+
+
+    /* footer end  */
+}
+
+
+

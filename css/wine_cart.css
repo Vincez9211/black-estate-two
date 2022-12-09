@@ -1,0 +1,569 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800;900&display=swap");
+
+/* for background image darkness  */
+/* div.wines{
+    background-image: url(background-image: url(../img/Pet\ Nat\ Wine-background\ 2-03.jpeg);
+    background-color: rgba(255,255,255,0.9);
+    background-blend-mode: darken;
+    /* You may add things like width, height, background-size... 
+}*/
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --gold: #989549;
+  --darkgold: rgb(63, 62, 32);
+  --lightgold: rgb(226, 223, 116);
+  --darkred: #5f3639;
+  --lightred: #bba7a8;
+  --offblack: #231f20;
+  --offgrey: #cdcdcd;
+  --pink: #231f20;
+  --white: #fff;
+  --pink: #ffd0d3;
+}
+
+/* title style start  */
+
+#icon {
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  line-height: 80px;
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+  display: none;
+}
+
+h1 {
+  color: var(--gold);
+  font-family: Playfair Display;
+  font-size: 4em;
+  padding: 20px 0;
+}
+
+h2 {
+  color: var(--darkred);
+  font-family: Playfair Display;
+  font-size: 2em;
+  padding: 15px 0;
+}
+
+h3 {
+  color: var(--offblack);
+  font-family: Montserrat;
+  font-weight: 700;
+  padding-top: 20px;
+}
+
+h4 {
+  color: var(--offblack);
+  font-family: Playfair Display;
+  font-weight: 700;
+  padding-bottom: 15px;
+
+}
+
+p {
+  color: var(--offblack);
+  font-family: Montserrat;
+  font-weight: 400;
+  padding: 15px 0;
+}
+
+button {
+  background-color: var(--darkred);
+  padding: 7px 12px;
+  border-radius: 4px;
+  border: none;
+  font-family: Montserrat;
+  font-weight: 500;
+  color: whitesmoke;
+  cursor: pointer;
+  font-size: 1em;
+
+}
+
+button:hover {
+  background-color: #a26d71;
+}
+/* title style end  */
+
+/* Navigation start  */
+
+header {
+  /* height: 40vh; */
+  background-image: url(../img/wine_individual.jpeg);
+  background-color: rgba(75, 75, 75, 0.7);
+  background-blend-mode: darken;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+header img {
+  height: 20vh;
+}
+
+/* @media all and (min-width: 751px) { */
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul a {
+  padding: 20px;
+  font-family: Montserrat;
+  font-weight: 600;
+  color: whitesmoke;
+}
+
+nav ul a:hover {
+  color: var(--pink);
+}
+
+.active {
+  color: var(--pink);
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  border-bottom: none;
+}
+
+.quantity_head {
+  font-weight: 700;
+}
+
+.quantity {
+  display: flex;
+  padding-top: 10px;
+}
+
+.wine {
+  display: flex;
+  flex-direction: row;
+  padding: 80px 100px;
+  justify-content: space-between;
+}
+
+.quantity {
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.minus {
+  background-color: var(--offgrey);
+  color: var(--white);
+  font-family: Montserrat;
+  font-size: 1em;
+  margin: 0 3px 0 0;
+  height: 35px;
+}
+
+.number {
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  border-color: var(--offgrey);
+
+}
+
+.plus {
+  background-color: var(--offgrey);
+  color: var(--white);
+  font-family: Montserrat;
+  font-size: 1em;
+  margin: 0 0 0 3px;
+  height: 35px;
+}
+
+.buttons {
+  padding-bottom: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.buttons button {
+  width: 130px;
+}
+
+.buy_now {
+  background-color: var(--gold);
+}
+
+.buy_now:hover{
+  background-color: var(--darkgold);
+}
+
+.more_info li {
+  font-family: Montserrat;
+  font-weight: 400;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.more_info li:hover {
+  color: var(--gold);
+}
+
+
+/* Table start  */
+
+.wine_pic {
+  display: flex;
+  justify-content: center;
+}
+
+
+.cart_table table{
+  width: 100%;
+}
+
+/* table {
+  border-collapse:separate;
+} */
+
+.header_border th h3{
+  padding: 10px 0;
+
+}
+
+table { 
+  border-top: 1px solid var(--offblack);;
+  border-bottom: 1px solid var(--offblack);
+  
+
+}
+
+th{
+  text-align: left;
+  border-top-color: white;
+}
+
+
+.wine_column{
+  width: 20vw;
+  padding: 50px 0;
+}
+
+.left_info{
+  padding-right: 80px;
+}
+
+
+.wine_pic img{
+  height: 200px;
+}
+
+
+td h3{
+  padding-top: 0px;
+}
+
+.tot_price{
+  padding-right: 60px;
+}
+
+
+
+.cart_cross i{
+  padding-left: 40px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.cart_cross i:hover{
+  color: var(--lightred);
+}
+
+
+/* Table end  */
+
+
+/* order details start  */
+.order_details{
+  text-align: right;
+  padding: 40px 40px;
+}
+
+.cart_text{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  gap: 30px;
+  padding: 40px 0;
+}
+
+.left_info{
+  text-align: left;
+}
+
+.cart_text{
+  line-height: 50px;
+}
+/* order details end  */
+
+
+/* wine_checkout page start  */
+
+
+input{
+  width: 30%;
+  height: 30px;
+  border-radius: 5px;
+  border-width: 1px;
+  padding: 8px;
+  margin: 5px;
+  color: var(--gold);
+
+}
+
+
+
+
+/* wine_checkout page end  */
+
+
+
+
+/* footer start  */
+footer {
+  background-color: var(--offblack);
+  padding: 4%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.info {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer p {
+  color: var(--white);
+}
+
+.gold {
+  color: var(--gold);
+  font-weight: 700;
+}
+
+footer img {
+  height: 100px;
+  width: auto;
+  align-self: flex-end;
+}
+
+/* copyright info start  */
+
+.copyright {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10vw;
+}
+
+.copyright p {
+  font-size: 0.7em;
+}
+
+.footer_links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer_links a {
+  font-size: 0.7em;
+  color: white;
+  text-decoration: underline;
+  font-family: Montserrat;
+}
+
+.footer_links a:hover {
+  color: var(--gold);
+}
+
+/* copyright info end  */
+
+@media all and (max-width: 1000px) {
+  nav ul a {
+    padding: 15px;
+  }
+  
+}
+
+@media all and (max-width: 750px) {
+  header {
+    z-index: 2;
+  }
+
+  /* nav burger menu start  */
+  /* hamburger icon animation  */
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  /* hamburger icon animation end */
+
+  header{
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    background-color: var(--offblack);
+    background-image: none;
+
+  }
+
+  header img {
+    height: 70px;
+  }
+
+  .nav_menu {
+    position: fixed;
+    right: -100%;
+    top: 60px;
+    height: 90vh;
+    gap: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: var(--offblack);
+    background-image: none;
+    width: 100vw;
+    text-align: center;
+    transition: 0.5s;
+    z-index: 2;
+    padding: 40px 0;
+  }
+
+  .nav_item {
+    margin: 16px;
+  }
+
+  .nav_menu.active {
+    right: 0;
+  }
+
+  /* nav burger menu end  */
+  .wine_info{
+    padding: 0;
+  }
+  
+  
+  th h3{
+    display: none;
+  }
+
+   .pet_nat{
+    padding: 0 10px;
+  }
+
+  .quantity{
+    padding: 0 10px;
+
+  }
+  
+  .cart_text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+
+  /* wine cart start  */
+
+
+
+
+  /* wine cart end  */
+  
+
+  /* footer start  */
+  
+  .info{
+
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.resturant{
+    text-align: right;
+}
+
+.hide{
+    display: none;
+}
+
+
+
+/* copyright info start  */
+
+.copyright{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.copyright p{
+    font-size: .7em;
+}
+
+.element_hide{
+    display: none;
+}
+/* copyright info end  */
+
+
+
+/* footer end  */
+}

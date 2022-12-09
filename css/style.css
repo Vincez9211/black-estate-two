@@ -1,0 +1,797 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800;900&display=swap');
+
+
+
+/* for background image darkness  */
+/* div.wines{
+    background-image: url(background-image: url(../img/Pet\ Nat\ Wine-background\ 2-03.jpeg);
+    background-color: rgba(255,255,255,0.9);
+    background-blend-mode: darken;
+    /* You may add things like width, height, background-size... 
+}*/
+
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --gold: #989549;
+    --darkgold: rgb(63, 62, 32);
+    --lightgold: rgb(226, 223, 116);
+    --darkred:#5F3639;
+    --offblack: #231F20;
+    --pink: #231F20;
+    --white: #fff;
+    --pink: #ffd0d3;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* title style start  */
+
+#icon{
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    line-height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    display: none;
+}
+
+h1{
+    color: var(--gold);
+    font-family: Playfair Display;
+    font-size: 4em;
+    padding: 20px 0;
+    
+}
+
+h2{
+    color: var(--darkred);
+    font-family: Playfair Display;
+    font-size: 2em;
+    padding: 15px 0;
+    
+}
+
+h3{
+    color: var(--offblack);
+    font-family: Montserrat;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+h4{
+    color: var(--offblack);
+    font-family: Playfair Display;
+    font-weight: 700;
+    padding-bottom: 15px;
+    /* color: var(--white); */
+
+}
+
+p{
+    color: var(--offblack);
+    font-family: Montserrat;
+    font-weight: 400;
+    padding: 15px 0;
+}
+
+
+
+button{
+    background-color: var(--darkred);
+    padding: 7px 12px;
+    border-radius: 4px;
+    border: none;
+    font-family: Montserrat;
+    font-weight: 500;
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: 1em;
+
+}
+
+button:hover{
+    background-color: #a26d71;
+}
+/* title style end  */
+
+
+
+/* Navigation start  */
+body{
+    /* overflow-x: hidden; */
+}
+
+
+header{
+    /* height: 40vh; */
+    background-image: url(../img/header_img.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+
+
+header img{
+    height: 20vh;
+}
+
+/* @media all and (min-width: 751px) { */
+    
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+nav ul a{
+    padding: 20px;
+    font-family: Montserrat;
+    font-weight: 600;
+    color: whitesmoke;
+    
+}
+
+nav ul a:hover{
+    color: var(--pink);
+}
+
+.active{
+    color: var(--pink);
+}
+
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+    border-bottom: none;
+}
+
+
+.header_hide{
+    display: none;
+}
+
+
+/* Special start  */
+.special{
+    background-image: url(../img/Pet\ Nat\ Wine-background\ 2-03.jpeg);
+    background-position: center;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 100px;
+    
+}
+
+.special_text{
+    /* padding: 50px; */
+    flex: 3;
+    
+
+}
+
+.special_img{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+}
+
+.special_img img{
+    height: 550px;
+    display: flex;
+    align-items:center;
+    justify-content: left;
+}
+
+.special_price{
+    font-family:montserrat;
+    font-size: 1.2em;
+    padding: 10px 0 20px 0;
+}
+
+/* Special end  */
+
+
+
+
+
+/* shop start  */
+.shop{
+    /* height: 70vh; */
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row-reverse;
+
+}
+
+.shop_text{
+    padding: 40px 80px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}   
+
+.shop_pic img{
+    object-fit: cover;
+    width: 50vw;
+    height: 550px;
+
+  
+}
+/* shop end  */
+
+img {
+    display: block;
+}
+/* ^^ remove white lines between images  */
+
+
+
+/* dine start  */
+.dine{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+}
+
+.dine_text{
+    padding: 40px 80px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.dine_pic img{
+    object-fit: cover;
+    width: 50vw;
+    min-height:100%;
+    max-height: 2000px;
+    
+}
+/* dine end  */
+
+
+
+
+/* members start  */
+.members{
+    background-image: url(../img/members.jpeg);
+    background-attachment: relative;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: initial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.members h2{
+    text-align: center;
+    color: var(--white);
+}
+
+.members p{
+    text-align: center;
+    color: var(--white);
+}
+
+.input_field{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+
+}
+
+input{
+    width: 700px;
+    height: 30px;
+    border-radius: 5px;
+    border-width: 1px;
+    padding: 8px;
+    margin: 5px;
+
+}
+
+.input_btn{
+    margin-top: 20px;
+}
+
+.flname{
+    display: flex;
+    flex-direction: row;
+    width: 710px;
+}
+
+.input_btn{
+    background-color: var(--gold);
+}
+
+/* members end  */
+
+
+
+
+/* about start  */
+
+.about{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about_info{
+    width: 40vw;
+    align-items: center;
+    padding: 0 80px 0 0;
+}
+
+
+.photo{
+    --gap: 10px;
+    --num-cols:3;
+    --row-height: 180px;
+
+
+    box-sizing: border-box;
+    padding: var(--gap);
+    width: 50vw;
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+}
+
+
+.photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.double{
+    grid-column: span 2;
+}
+
+/* about end  */
+
+
+
+
+/* footer start  */
+footer{
+    background-color: var(--offblack);
+    padding: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+footer p{
+    color: var(--white);
+}
+
+.gold{
+    color: var(--gold);
+    font-weight: 700;
+}
+
+
+footer img{
+    height: 100px;
+    width: auto;
+    align-self: flex-end;
+}
+
+/* copyright info start  */
+
+.copyright{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10vw;
+}
+
+.copyright p{
+    font-size: .7em;
+}
+
+.footer_links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer_links a{
+    font-size: .7em;
+    color: white;
+    text-decoration: underline;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.footer_links a:hover{
+    color: var(--gold)
+}
+
+/* copyright info end  */
+
+
+
+
+
+@media all and (max-width: 1000px) {
+    nav ul a{
+        padding: 15px;
+    }
+}
+
+
+
+
+
+
+@media all and (max-width: 750px) {
+
+    h1{
+        color: var(--gold);
+        font-family: Playfair Display;
+        font-size: 3em;
+        padding: 20px 0;
+        
+    }
+
+/* nav burger menu start  */
+    /* hamburger icon animation  */
+    .bar{
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        border-radius: 5px;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: white;
+        z-index: 2;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    /* hamburger icon animation end */
+    
+    header{
+        position: fixed;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 50px;
+        background-color: var(--offblack);
+        background-image: none;
+        z-index: 2;
+
+    }
+
+    header img{
+        height: 70px;
+    }
+
+    .nav_menu{
+        position: fixed;
+        right:-100%;
+        top: 60px;
+        height: 90vh;
+        gap: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: var(--offblack);
+        width: 100vw;
+        text-align: center;
+        transition: 0.5s;
+        z-index: 1;
+        padding: 40px 0;
+    }
+
+    .nav_item{
+        margin: 16px;
+    }
+
+    .nav_menu.active{
+        right: 0;
+    }
+
+/* nav burger menu end  */
+
+    .header_hide{
+        display: block;
+        background-image: url(../img/header_img.jpeg);
+        background-color: rgba(75, 75, 75, 0.4);
+        background-position: center;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+        height: 100vh;
+
+    }
+
+    .header_hide img{
+        width: 70vw;
+        align-self: center;
+    }
+
+    .down_arrow img{
+        color: white;
+    }
+
+    .down_arrow {
+        position: absolute;
+        z-index: 0;
+        top: 90%;
+        align-items: center;
+      }
+      .down_arrow img {
+        width: 4em;
+      }
+      .down_arrow {
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+      }
+      .down_arrow {
+        animation-name: down_arrow;
+        animation-timing-function: cubic-bezier(0.28, 0.5, 0.42, 1);
+      }
+      @keyframes down_arrow {
+        0% {
+          transform: scale(1, 1) translateY(0);
+        }
+        10% {
+          transform: scale(1.1, 0.9) translateY(0);
+        }
+        30% {
+          transform: scale(0.9, 1.1) translateY(-50px);
+        }
+        50% {
+          transform: scale(1.05, 0.95) translateY(0);
+        }
+        57% {
+          transform: scale(1, 1) translateY(-7px);
+        }
+        64% {
+          transform: scale(1, 1) translateY(0);
+        }
+        100% {
+          transform: scale(1, 1) translateY(0);
+        }
+    }
+
+
+
+    
+
+
+/* specials start  */
+    .special{
+        background-image: url(../img/Pet\ Nat\ Wine-background\ 2-03.jpeg);
+        background-position: center;
+        /* height: 100vh; */
+        background-size: cover;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+        height: 120%;
+        padding: 50px 0;
+        
+    }
+    
+    .special_text{
+        /* width: 50vw; */
+        width: 80vw;
+      
+    }
+
+    
+    .special_img img{
+        /* height: 80vh; */
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        flex: 1;
+        padding: 5vh;
+    }
+    
+    /* shop start  */
+    .shop{
+        display: flex;
+        justify-content:space-between;
+        flex-direction: column-reverse;
+        text-align: left;
+    }
+
+    .shop_text{
+        padding: 30px;
+        
+    }
+
+    .shop_pic img{
+        object-fit: cover;
+        width: 100%;
+        height: 500px;
+    }
+
+    .gridContainer{
+        background-color: blue;
+        display: grid;
+        grid-auto-rows: minmax(140px, auto);
+        grid-gap: 3px;
+        grid-template-columns: 1fr 1fr;
+        padding: 7px;
+        text-align: center;
+        
+        /* ^^ 1fr means fraction, similar to flex:1, we are telling the children to take "1" available space  */
+        /* ^^ tells us how many columns we want */
+       }
+    /* shop end  */
+
+    /* dine start  */
+    .dine{
+        display: flex;
+        justify-content:space-between;
+        flex-direction: column-reverse;
+    }
+
+    .dine_text{
+        padding: 30px;
+    }
+
+    .dine img{
+        object-fit: cover;
+        width: 100%;
+        height: 500px;
+    }
+    /* dine end  */
+
+
+    /* members start  */
+    .members{
+        padding: 0 30px;
+    }
+    
+    input{
+        width: 400px;
+        height: 30px;
+        border-radius: 5px;
+        border-width: 1px;
+        padding: 8px;
+        margin: 5px;
+    }
+
+    .flname{
+        width: 410px;
+    }
+    /* members end  */
+
+    /* about start  */
+    .about{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .about_info{
+        width: 90vw;
+        padding-bottom: 30px;
+        align-items: center;
+    }
+    .photo{
+        --gap: 10px;
+        --num-cols:3;
+        --row-height: 180px;
+    
+    
+        box-sizing: border-box;
+        padding: var(--gap);
+        width: 100vw;
+        display: grid;
+        grid-template-columns: repeat(var(--num-cols), 1fr);
+        grid-auto-rows: var(--row-height);
+        gap: var(--gap);
+    }
+    /* about end  */
+
+    /* footer start  */
+  
+    .info{
+        /* width: 50%; */
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .resturant{
+        text-align: right;
+    }
+
+    .hide{
+        display: none;
+    }
+
+    
+
+    /* copyright info start  */
+
+    .copyright{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* gap: 10vw; */
+    }
+
+    .copyright p{
+        font-size: .7em;
+    }
+
+    .element_hide{
+        display: none;
+    }
+/* copyright info end  */
+
+
+    /* footer end  */
+}
+

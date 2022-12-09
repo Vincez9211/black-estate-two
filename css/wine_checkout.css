@@ -1,0 +1,435 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800;900&display=swap");
+
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --gold: #989549;
+  --darkgold: rgb(63, 62, 32);
+  --lightgold: rgb(226, 223, 116);
+  --darkred: #5f3639;
+  --lightred: #bba7a8;
+  --offblack: #231f20;
+  --offgrey: #cdcdcd;
+  --pink: #231f20;
+  --white: #fff;
+  --pink: #ffd0d3;
+}
+
+/* title style start  */
+
+#icon {
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  line-height: 80px;
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+  display: none;
+}
+
+h1 {
+  color: var(--gold);
+  font-family: Playfair Display;
+  font-size: 4em;
+  padding: 20px 0;
+}
+
+h2 {
+  color: var(--darkred);
+  font-family: Playfair Display;
+  font-size: 2em;
+  padding: 15px 0;
+}
+
+h3 {
+  color: var(--offblack);
+  font-family: Montserrat;
+  font-weight: 700;
+  padding-top: 20px;
+}
+
+h4 {
+  color: var(--offblack);
+  font-family: Playfair Display;
+  font-weight: 700;
+  padding-bottom: 15px;
+
+}
+
+p {
+  color: var(--offblack);
+  font-family: Montserrat;
+  font-weight: 400;
+  padding: 15px 0;
+}
+
+button {
+  background-color: var(--darkred);
+  padding: 7px 12px;
+  border-radius: 4px;
+  border: none;
+  font-family: Montserrat;
+  font-weight: 500;
+  color: whitesmoke;
+  cursor: pointer;
+  font-size: 1em;
+
+}
+
+button:hover {
+  background-color: #a26d71;
+}
+/* title style end  */
+
+/* Navigation start  */
+
+header {
+  background-image: url(../img/wine_individual.jpeg);
+  background-color: rgba(75, 75, 75, 0.7);
+  background-blend-mode: darken;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+header img {
+  height: 20vh;
+}
+
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul a {
+  padding: 20px;
+  font-family: Montserrat;
+  font-weight: 600;
+  color: whitesmoke;
+}
+
+nav ul a:hover {
+  color: var(--pink);
+}
+
+.active {
+  color: var(--pink);
+}
+
+
+/* billing and order section start  */
+.billing_order{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+ padding: 40px 80px;
+}
+
+.order{
+ background-color: #9a873b41;
+ border-radius: 7px;
+ padding: 20px;
+}
+
+.pic_par{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-evenly;
+ align-items: center;
+ gap: 20%;
+ padding: 10px 30px;
+
+}
+
+.pic img{
+ height: 200px;
+}
+
+
+
+
+
+/* order details start  */
+.order_details{
+ text-align: right;
+ padding: 40px 40px;
+}
+
+.cart_text{
+ display: flex;
+ flex-direction: row;
+ gap: 30px;
+}
+
+.left_info{
+ text-align: left;
+}
+
+.cart_text{
+ line-height: 50px;
+ display: flex;
+ justify-content: space-between;
+}
+
+.right_info{
+ text-align: right;
+}
+/* order details end  */
+
+
+input{
+ width: 90%;
+ height: 40px;
+ border-radius: 5px;
+ border-width: 1px;
+ padding: 8px;
+ color: var(--gold);
+ }
+
+.billing{
+ flex: 1.3;
+}
+
+.order{
+ flex: 1;
+}
+
+.credit_button{
+ margin-top: 30px;
+}
+
+
+.safe_img{
+ width: 150px;
+ padding-top: 20px;
+}
+
+/* footer start  */
+footer {
+ background-color: var(--offblack);
+ padding: 4%;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+}
+
+.info {
+ width: 50%;
+ display: flex;
+ justify-content: space-between;
+}
+
+footer p {
+ color: var(--white);
+}
+
+.gold {
+ color: var(--gold);
+ font-weight: 700;
+}
+
+footer img {
+ height: 100px;
+ width: auto;
+ align-self: flex-end;
+}
+
+/* copyright info start  */
+
+.copyright {
+ height: 50px;
+ display: flex;
+ align-items: center;
+ gap: 10vw;
+}
+
+.copyright p {
+ font-size: 0.7em;
+}
+
+.footer_links {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ gap: 20px;
+}
+
+.footer_links a {
+ font-size: 0.7em;
+ color: white;
+ text-decoration: underline;
+ font-family: Montserrat;
+}
+
+.footer_links a:hover {
+ color: var(--gold);
+}
+
+/* copyright info end  */
+
+
+
+
+
+@media all and (max-width: 1000px) {
+ nav ul a {
+   padding: 15px;
+ }
+ 
+}
+
+@media all and (max-width: 750px) {
+ header {
+   z-index: 2;
+ }
+
+ /* nav burger menu start  */
+ /* hamburger icon animation  */
+ .bar {
+   display: block;
+   width: 25px;
+   height: 3px;
+   margin: 5px auto;
+   border-radius: 5px;
+   -webkit-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+   background-color: white;
+ }
+
+ .hamburger {
+   display: block;
+ }
+
+ .hamburger.active .bar:nth-child(2) {
+   opacity: 0;
+ }
+
+ .hamburger.active .bar:nth-child(1) {
+   transform: translateY(8px) rotate(45deg);
+ }
+
+ .hamburger.active .bar:nth-child(3) {
+   transform: translateY(-8px) rotate(-45deg);
+ }
+ /* hamburger icon animation end */
+
+ header{
+   position: fixed;
+   width: 100vw;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   height: 50px;
+   background-color: var(--offblack);
+   background-image: none;
+
+ }
+
+ header img {
+   height: 70px;
+ }
+
+ .nav_menu {
+   position: fixed;
+   right: -100%;
+   top: 60px;
+   height: 90vh;
+   gap: 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   background-color: var(--offblack);
+   background-image: none;
+   width: 100vw;
+   text-align: center;
+   transition: 0.5s;
+   z-index: 2;
+   padding: 40px 0;
+ }
+
+ .nav_item {
+   margin: 16px;
+ }
+
+ .nav_menu.active {
+   right: 0;
+ }
+
+ /* footer start  */
+  
+ .info{
+
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.resturant{
+  text-align: right;
+}
+
+.hide{
+  display: none;
+}
+
+/* billing and shipping start  */
+
+.order_header{
+ padding: 30px 0 20px 0;
+}
+
+.billing_order{
+ display: flex;
+ flex-direction: column-reverse;
+ padding: 40px 80px;
+}
+
+.bill_header{
+ padding-top: 30px;
+}
+
+.par{
+ text-align: right;
+}
+
+
+
+
+/* copyright info start  */
+
+.copyright{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.copyright p{
+  font-size: .7em;
+}
+
+.element_hide{
+  display: none;
+}
+/* copyright info end  */
+
+
+
+/* footer end  */
+}
